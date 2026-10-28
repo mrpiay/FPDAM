@@ -11,7 +11,7 @@ hide:
 
 # Programación didáctica de DAM
 
-<p>Abierta y en desarrollo.<br>
+<p>Abierta y en desarrollo · 4 módulos disponibles.<br>
 Programaciones, unidades didácticas, prácticas con rúbrica y proyectos reales.<br>
 Basado en el RD 405/2023 y en el currículo de Galicia, con cada fuente citada.</p>
 
@@ -22,7 +22,7 @@ Basado en el RD 405/2023 y en el currículo de Galicia, con cada fuente citada.<
 </div>
 
 <div class="fp-stats">
-  <div class="fp-stat"><strong>4</strong><span>módulos</span></div>
+  <div class="fp-stat"><strong>4</strong><span>módulos disponibles</span></div>
   <div class="fp-stat"><strong>777 h</strong><span>currículo de Galicia</span></div>
   <div class="fp-stat"><strong>39</strong><span>unidades didácticas</span></div>
   <div class="fp-stat"><strong>236</strong><span>criterios de evaluación</span></div>
