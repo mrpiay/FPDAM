@@ -10,7 +10,7 @@ De momento incluye **cuatro módulos**, dos de 1.º y dos de 2.º. El repositori
 
 - **Para impartir los módulos:** cada módulo tiene su programación didáctica y sus unidades listas para usar en el aula.
 - **Para preparar o revisar una programación:** muestra cómo se concreta el currículo oficial en secuencia, horas, evaluación y cobertura completa de los criterios de evaluación.
-- **Para adaptarlo a otro centro:** las tecnologías, la temporalización y los criterios de calificación son propuestas justificadas, con alternativas y un plan B para cambiarlas.
+- **Para adaptarlo a un centro:** las tecnologías, la temporalización y los criterios de calificación son propuestas justificadas, con alternativas y un plan B para cambiarlas.
 - **Para reutilizarlo y mejorarlo:** el contenido está en ficheros Markdown, con licencia abierta.
 
 ## Qué contiene
