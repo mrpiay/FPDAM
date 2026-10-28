@@ -19,6 +19,8 @@ De momento incluye **cuatro módulos**, dos de 1.º y dos de 2.º. El repositori
 |:---:|:---:|:---:|:---:|:---:|
 | 1.º y 2.º DAM | Currículo de Galicia | Cada una con práctica y rúbrica | Todos trabajados y evaluados | Frente a alternativas, con fuentes |
 
+### Módulos disponibles
+
 | Curso | Módulo | Horas | Proyecto | Tecnología principal |
 |---|---|:---:|---|---|
 | 1.º | [**MP0483 · Sistemas informáticos**](1DAM/0483-sistemas-informaticos/README.md) | 155 | Infraestructura de una pequeña empresa de software | Linux · Windows Server y dominio · virtualización · redes |
