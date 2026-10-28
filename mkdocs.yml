@@ -1,0 +1,179 @@
+site_name: Programación didáctica DAM
+site_description: Programaciones, unidades y proyectos de los módulos MP0483, MP0485, MP0488 y MP0489 del CFGS DAM (Galicia), basados en el RD 405/2023.
+site_url: https://mrpiay.github.io/FPDAM/
+repo_url: https://github.com/mrpiay/FPDAM
+repo_name: mrpiay/FPDAM
+edit_uri: ""
+# El contenido vive en la raíz del repo; scripts/build-site.sh lo copia a docs/ antes de compilar.
+docs_dir: docs
+
+theme:
+  name: material
+  language: es
+  icon:
+    logo: material/school
+  favicon: assets/favicon.svg
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - toc.integrate
+    - content.code.copy
+
+extra_css:
+  - assets/extra.css
+
+extra_javascript:
+  - assets/external-links.js
+  - assets/modulos.js
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Inicio: index.md
+  - "1.º DAM":
+    - "MP0483 · Sistemas informáticos":
+      - Ficha del módulo: 1DAM/0483-sistemas-informaticos/README.md
+      - Programación didáctica: 1DAM/0483-sistemas-informaticos/programacion-didactica.md
+      - Currículo oficial (BOE): 1DAM/0483-sistemas-informaticos/curriculo-boe.md
+      - Unidades:
+        - "UD01 · Hardware y arquitectura de un sistema informático": 1DAM/0483-sistemas-informaticos/unidades/UD01-hardware-y-arquitectura/README.md
+        - "UD02 · Sistemas operativos, virtualización e instalación": 1DAM/0483-sistemas-informaticos/unidades/UD02-sistemas-operativos-y-virtualizacion/README.md
+        - "UD03 · Almacenamiento, sistemas de archivos y cifrado": 1DAM/0483-sistemas-informaticos/unidades/UD03-almacenamiento-y-sistemas-de-archivos/README.md
+        - "UD04 · Administración local: usuarios, permisos, procesos y servicios": 1DAM/0483-sistemas-informaticos/unidades/UD04-administracion-local-del-sistema/README.md
+        - "UD05 · Automatización, copias de seguridad y entorno de desarrollo": 1DAM/0483-sistemas-informaticos/unidades/UD05-automatizacion-copias-y-entorno-de-desarrollo/README.md
+        - "UD06 · Redes de ordenadores y direccionamiento IP": 1DAM/0483-sistemas-informaticos/unidades/UD06-redes-y-direccionamiento-ip/README.md
+        - "UD07 · Configuración, diagnóstico y seguridad de red en los sistemas operativos": 1DAM/0483-sistemas-informaticos/unidades/UD07-configuracion-y-diagnostico-de-red/README.md
+        - "UD08 · Recursos compartidos, servidores y dominios": 1DAM/0483-sistemas-informaticos/unidades/UD08-recursos-en-red-y-dominios/README.md
+        - "UD09 · Documentación técnica y aplicaciones de propósito general": 1DAM/0483-sistemas-informaticos/unidades/UD09-documentacion-y-aplicaciones-de-proposito-general/README.md
+      - Decisiones:
+        - Índice: 1DAM/0483-sistemas-informaticos/decisiones/README.md
+        - "DEC-SI-01 · Plataforma de virtualización": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-01-virtualizacion.md
+        - "DEC-SI-02 · Sistema operativo libre (distribución Linux)": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-02-distribucion-linux.md
+        - "DEC-SI-03 · Sistema propietario y servicio de dominio": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-03-windows-y-dominio.md
+        - "DEC-SI-04 · Simulación de redes": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-04-simulador-redes.md
+        - "DEC-SI-05 · Shells, *scripting* y planificación de tareas": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-05-shell-scripting.md
+        - "DEC-SI-06 · Copias de seguridad y cifrado": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-06-copias-de-seguridad.md
+        - "DEC-SI-07 · Herramientas colaborativas y de documentación": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-07-herramientas-colaborativas-y-documentacion.md
+        - "DEC-SI-08 · Contenidos añadidos no nombrados en los contenidos básicos": 1DAM/0483-sistemas-informaticos/decisiones/DEC-SI-08-contenidos-adicionales.md
+    - "MP0485 · Programación":
+      - Ficha del módulo: 1DAM/0485-programacion/README.md
+      - Programación didáctica: 1DAM/0485-programacion/programacion-didactica.md
+      - Currículo oficial (BOE): 1DAM/0485-programacion/curriculo-boe.md
+      - Unidades:
+        - "UD01 · Estructura de un programa, entorno y elementos del lenguaje": 1DAM/0485-programacion/unidades/UD01-estructura-programa/README.md
+        - "UD02 · Utilización de objetos y clases predefinidas": 1DAM/0485-programacion/unidades/UD02-objetos-clases-predefinidas/README.md
+        - "UD03 · Estructuras de control, excepciones, aserciones y depuración": 1DAM/0485-programacion/unidades/UD03-estructuras-control-excepciones/README.md
+        - "UD04 · Desarrollo de clases": 1DAM/0485-programacion/unidades/UD04-desarrollo-clases/README.md
+        - "UD05 · Arrays, cadenas y expresiones regulares": 1DAM/0485-programacion/unidades/UD05-arrays-cadenas-regex/README.md
+        - "UD06 · Herencia, polimorfismo, interfaces y composición": 1DAM/0485-programacion/unidades/UD06-herencia-interfaces/README.md
+        - "UD07 · Colecciones, genéricos y operaciones agregadas": 1DAM/0485-programacion/unidades/UD07-colecciones-genericos-streams/README.md
+        - "UD08 · Entrada/salida, ficheros y documentos JSON/XML": 1DAM/0485-programacion/unidades/UD08-entrada-salida-ficheros/README.md
+        - "UD09 · Interfaces gráficas con JavaFX y eventos": 1DAM/0485-programacion/unidades/UD09-interfaces-graficas-javafx/README.md
+        - "UD10 · Acceso a bases de datos relacionales con JDBC": 1DAM/0485-programacion/unidades/UD10-bases-datos-jdbc/README.md
+        - "UD11 · Bases de datos orientadas a objetos (ObjectDB / JPA)": 1DAM/0485-programacion/unidades/UD11-bases-datos-objetos/README.md
+      - Decisiones:
+        - Índice: 1DAM/0485-programacion/decisiones/README.md
+        - "DEC-PROG-01 · Lenguaje de programación": 1DAM/0485-programacion/decisiones/DEC-PROG-01-lenguaje.md
+        - "DEC-PROG-02 · Entorno integrado de desarrollo": 1DAM/0485-programacion/decisiones/DEC-PROG-02-ide.md
+        - "DEC-PROG-03 · Librería de interfaces gráficas": 1DAM/0485-programacion/decisiones/DEC-PROG-03-gui.md
+        - "DEC-PROG-04 · Base de datos orientada a objetos": 1DAM/0485-programacion/decisiones/DEC-PROG-04-bd-orientada-objetos.md
+        - "DEC-PROG-05 · Acceso a bases de datos relacionales": 1DAM/0485-programacion/decisiones/DEC-PROG-05-acceso-bd.md
+        - "DEC-PROG-06 · Control de versiones, construcción y flujo de trabajo": 1DAM/0485-programacion/decisiones/DEC-PROG-06-control-versiones-y-flujo.md
+        - "DEC-PROG-07 · Formatos y librerías de intercambio de datos": 1DAM/0485-programacion/decisiones/DEC-PROG-07-formato-intercambio-datos.md
+        - "DEC-PROG-08 · Pruebas automatizadas": 1DAM/0485-programacion/decisiones/DEC-PROG-08-pruebas.md
+  - "2.º DAM":
+    - "MP0488 · Desarrollo de interfaces":
+      - Ficha del módulo: 2DAM/0488-desarrollo-de-interfaces/README.md
+      - Programación didáctica: 2DAM/0488-desarrollo-de-interfaces/programacion-didactica.md
+      - Currículo oficial (BOE): 2DAM/0488-desarrollo-de-interfaces/curriculo-boe.md
+      - Unidades:
+        - "UD01 · Interfaces gráficas con JavaFX, FXML y Scene Builder": 2DAM/0488-desarrollo-de-interfaces/unidades/UD01-javafx-fxml-scene-builder/README.md
+        - "UD02 · Diseño de interfaces: usabilidad, accesibilidad, wireframes y mockups": 2DAM/0488-desarrollo-de-interfaces/unidades/UD02-usabilidad-accesibilidad/README.md
+        - "UD03 · Eventos, enlace a datos y arquitectura MVVM": 2DAM/0488-desarrollo-de-interfaces/unidades/UD03-eventos-enlace-datos/README.md
+        - "UD04 · Componentes visuales propios": 2DAM/0488-desarrollo-de-interfaces/unidades/UD04-componentes-visuales/README.md
+        - "UD05 · Informes con JasperReports": 2DAM/0488-desarrollo-de-interfaces/unidades/UD05-informes/README.md
+        - "UD06 · Interfaces naturales de usuario": 2DAM/0488-desarrollo-de-interfaces/unidades/UD06-interfaces-naturales/README.md
+        - "UD07 · Documentación de aplicaciones y sistemas de ayuda": 2DAM/0488-desarrollo-de-interfaces/unidades/UD07-documentacion-ayudas/README.md
+        - "UD08 · Distribución de aplicaciones": 2DAM/0488-desarrollo-de-interfaces/unidades/UD08-distribucion/README.md
+        - "UD09 · Pruebas de aplicaciones": 2DAM/0488-desarrollo-de-interfaces/unidades/UD09-pruebas/README.md
+      - Decisiones:
+        - Índice: 2DAM/0488-desarrollo-de-interfaces/decisiones/README.md
+        - "DEC-DI-01 · Framework de interfaces gráficas de escritorio": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-01-framework-gui.md
+        - "DEC-DI-02 · Herramienta de wireframes, mockups y prototipos": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-02-herramienta-prototipado.md
+        - "DEC-DI-03 · Tecnologías para interfaces naturales (RA2)": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-03-interfaces-naturales.md
+        - "DEC-DI-04 · Herramienta y librería de informes": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-04-informes.md
+        - "DEC-DI-05 · Sistema de ayuda y documentación": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-05-documentacion-y-ayuda.md
+        - "DEC-DI-06 · Empaquetado, instaladores, firma y distribución": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-06-empaquetado-y-distribucion.md
+        - "DEC-DI-07 · Herramientas de pruebas": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-07-pruebas.md
+        - "DEC-DI-08 · Contenidos añadidos fuera de los contenidos básicos": 2DAM/0488-desarrollo-de-interfaces/decisiones/DEC-DI-08-contenidos-anadidos.md
+    - "MP0489 · PMDM":
+      - Ficha del módulo: 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/README.md
+      - Programación didáctica: 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/programacion-didactica.md
+      - Currículo oficial (BOE): 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/curriculo-boe.md
+      - Unidades:
+        - "UD01 · Tecnologías móviles y entorno de desarrollo": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD01-tecnologias-y-entorno-movil/README.md
+        - "UD02 · Kotlin y estructura de una app Android": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD02-kotlin-y-estructura-de-una-app/README.md
+        - "UD03 · Interfaces de usuario con Jetpack Compose": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD03-interfaces-con-compose/README.md
+        - "UD04 · Arquitectura, navegación y persistencia": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD04-arquitectura-navegacion-persistencia/README.md
+        - "UD05 · Conectividad, servicios web, permisos y segundo plano": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD05-conectividad-servicios-web-segundo-plano/README.md
+        - "UD06 · Sensores, localización, mapas, pruebas y despliegue": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD06-sensores-localizacion-despliegue/README.md
+        - "UD07 · Programación multimedia": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD07-multimedia/README.md
+        - "UD08 · Análisis de motores de juegos: Godot 4 y Unity 6": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD08-motores-de-juegos/README.md
+        - "UD09 · Desarrollo de un juego 2D con Godot 4": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD09-juego-2d-godot/README.md
+        - "UD10 · Desarrollo de un juego 3D con Unity 6": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/unidades/UD10-juego-3d-unity/README.md
+      - Decisiones:
+        - Índice: 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/README.md
+        - "DEC-PMDM-01 · Plataforma y lenguaje para apps móviles": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-01-plataforma-y-lenguaje.md
+        - "DEC-PMDM-02 · Kit de interfaz de usuario": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-02-ui-toolkit.md
+        - "DEC-PMDM-03 · Persistencia de datos": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-03-persistencia.md
+        - "DEC-PMDM-04 · Red, servicios web, segundo plano y conectividad inalámbrica": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-04-red-y-servicios-web.md
+        - "DEC-PMDM-05 · Librerías multimedia": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-05-multimedia.md
+        - "DEC-PMDM-06 · Motor para el juego 2D": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-06-motor-2d.md
+        - "DEC-PMDM-07 · Motor para el juego 3D": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-07-motor-3d.md
+        - "DEC-PMDM-08 · Empaquetado y distribución": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-08-distribucion.md
+        - "DEC-PMDM-09 · Contenidos añadidos fuera de los contenidos básicos": 2DAM/0489-programacion-multimedia-y-dispositivos-moviles/decisiones/DEC-PMDM-09-contenidos-anadidos.md
+  - Normativa: normativa/README.md
+  - Plantillas:
+    - Criterios de decisión: plantillas/criterios-de-decision.md
+    - Plantilla de decisión: plantillas/decision.md
+    - Plantilla de unidad: plantillas/unidad-didactica.md
+  - FP·onboard:
+    - Presentación: fponboard/README.md
+    - Implantación en un centro: fponboard/implantacion.md
+    - Matriz de Capacidad: fponboard/matriz-de-capacidad.md
+    - Flujo de trabajo: fponboard/flujo-de-trabajo.md
+  - Acerca de:
+    - Sobre esta web: SOBRE-ESTA-WEB.md
+    - Publicación con GitHub Actions: PUBLICACION.md
+    - Hoja de ruta: ROADMAP.md

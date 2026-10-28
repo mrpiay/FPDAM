@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/
+
+docs/
+site/
+
+# CV personal (contiene datos de contacto)
+JavierPiay_CV_*.md
+
+# Notas personales del autor (enlaces de trabajo)
+links.md

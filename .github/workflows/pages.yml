@@ -1,0 +1,52 @@
+# Publica la web del repositorio en GitHub Pages.
+# Explicación paso a paso: PUBLICACION.md (en la web, «Acerca de → Publicación con GitHub Actions»).
+
+name: Publicar web
+
+# Cuándo se ejecuta: en cada push a la rama main y, a mano, desde la pestaña Actions («Run workflow»).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permisos mínimos del token que usa la acción: leer el repo y publicar en Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Si llegan dos pushes seguidos, se cancela la publicación anterior y solo queda la última.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  # Trabajo 1: generar la web (integración continua)
+  build:
+    runs-on: ubuntu-latest            # máquina virtual Linux que proporciona GitHub
+    steps:
+      - uses: actions/checkout@v4     # descarga el contenido del repositorio
+      - uses: actions/setup-python@v5 # instala Python
+        with:
+          python-version: "3.12"
+      # Versiones fijas: la web publicada sale igual que la generada en local
+      - run: pip install "mkdocs-material==9.8.0" "mkdocs==1.6.1"
+      # Copia el contenido del repo a docs/ y añade la portada y los estilos
+      - run: bash scripts/build-site.sh
+      # Genera el HTML en site/. Con --strict, un enlace roto hace fallar la acción y no se publica nada
+      - run: NO_MKDOCS_2_WARNING=1 mkdocs build --strict
+      # Empaqueta site/ como artefacto para el trabajo siguiente
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  # Trabajo 2: publicar la web (despliegue continuo). Solo se ejecuta si build ha terminado bien
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4 # sube el artefacto a GitHub Pages

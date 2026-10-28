@@ -1,0 +1,142 @@
+/* Paleta: rojo #c22622, gris oscuro #333333, blanco */
+:root {
+  --md-primary-fg-color: #c22622;
+  --md-primary-fg-color--light: #d9534f;
+  --md-primary-fg-color--dark: #9e1d1a;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255,255,255,.7);
+  --md-accent-fg-color: #9e1d1a;
+  --md-accent-fg-color--transparent: rgba(194,38,34,.1);
+  --md-typeset-a-color: #b0221e;
+}
+/* Cabecera y pestañas en gris oscuro, con el rojo como acento */
+.md-header { background: #c22622; }
+.md-tabs { background: transparent; }
+.md-tabs__link--active, .md-tabs__item--active .md-tabs__link { color: #fff; border-bottom: 2px solid #fff; }
+
+/* Portada */
+.fp-hero {
+  /* Ancho completo: sale del contenedor centrado del tema */
+  width: 100vw;
+  margin: -2.5rem calc(50% - 50vw) .8rem; /* anula el margen superior del tema (1.5 + 0.6 + 0.4 rem) */
+  padding: 3rem max(1.2rem, calc((100vw - 90rem) / 2 + 1.2rem)) 1rem;
+  border-radius: 0;
+  background: transparent;
+  color: #333333;
+  text-align: center;
+}
+.fp-hero h1 { color: #333333; font-weight: 700; margin: 0 0 .4rem; font-size: 2.1rem; line-height: 1.2; }
+.fp-hero p { color: #555555; font-size: 1.05rem; margin: 0 auto 1.4rem; max-width: 46rem; }
+.fp-hero .fp-kicker { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; color: #c22622; font-weight: 600; margin-bottom: .6rem; }
+.fp-hero .md-button { color: #333333; border-color: #333333; margin: 0 .2rem .4rem; }
+.fp-hero .md-button--primary { background: #c22622; color: #fff; border-color: #c22622; }
+.fp-hero .md-button:hover { background: #333333; color: #fff; }
+.fp-hero .md-button--primary:hover { background: #a51f1c; border-color: #a51f1c; color: #fff; }
+
+.fp-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); gap: .8rem; margin: 0 0 2rem; }
+.fp-stat { border: 1px solid var(--md-default-fg-color--lightest); border-radius: .6rem; padding: .9rem .6rem; text-align: center; }
+.fp-stat strong { display: block; font-size: 1.7rem; line-height: 1.1; color: var(--md-primary-fg-color); }
+.fp-stat span { font-size: .78rem; color: var(--md-default-fg-color--light); }
+
+.md-typeset .grid.cards > ul > li { border-radius: .6rem; }
+.md-typeset .fp-course { font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--md-default-fg-color--light); }
+
+@media screen and (max-width: 44.9375em) {
+  .fp-hero { margin: -2.5rem calc(50% - 50vw) 1.5rem; padding: 2rem 1rem 1.5rem; }
+  .fp-hero h1 { font-size: 1.6rem; }
+}
+
+
+/* Portada: tarjetas de módulo en 2 columnas en pantallas anchas */
+@media screen and (min-width: 45em) {
+  .md-typeset .grid.cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Bloques de curso en la portada: sin fondo, solo un borde lateral del color del curso */
+.md-typeset .fp-curso { padding: .1rem 0 .4rem 1.1rem; margin: 0 0 1.6rem; border-left: 5px solid; background: none; }
+.md-typeset .fp-curso h3 { margin-top: .3rem; }
+.md-typeset .fp-curso-1 { border-left-color: #c22622; }
+.md-typeset .fp-curso-1 h3 { color: #c22622; }
+.md-typeset .fp-curso-2 { border-left-color: #333333; }
+.md-typeset .fp-curso-2 h3 { color: #333333; }
+
+/* El desplazamiento horizontal del banner a ancho completo ya lo evita el tema (html { overflow-x: hidden }).
+   No poner overflow en body: rompería la cabecera y las pestañas fijas (position: sticky). */
+/* Más separación entre los dos módulos de cada curso */
+.md-typeset .fp-curso .grid.cards { gap: 1.6rem; }
+/* Características: fila compacta, como las cifras */
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards.fp-features { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.md-typeset .grid.cards.fp-features > ul > li { font-size: .78rem; padding: .9rem; }
+.md-typeset .grid.cards.fp-features { margin: 0 0 2rem; }
+
+/* Bordes de fichas más marcados y títulos en gris oscuro de la paleta */
+.md-typeset .grid.cards > ul > li,
+.fp-stat { border: 1px solid #6b6b6b; }
+.md-typeset .grid.cards > ul > li:hover { border-color: #c22622; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 { color: #333333; }
+.md-typeset .grid.cards strong { color: #c22622; }
+.md-typeset .grid.cards .twemoji, .md-typeset .grid.cards .twemoji svg { color: #c22622; fill: #c22622; }
+
+
+/* Itinerario: diagrama SVG, horizontal en pantallas anchas y vertical en el móvil */
+.fp-itinerario { margin: 1.2rem 0 2rem; }
+.fp-grafo { display: block; width: 100%; height: auto; }
+.fp-grafo-v { display: none; width: 100%; max-width: 100%; margin: 0 auto; }
+@media screen and (max-width: 44.9375em) {
+  .fp-grafo-h { display: none; }
+  .fp-grafo-v { display: block; }
+}
+
+/* Línea superior del banner en rojo; título en gris oscuro */
+.md-typeset .fp-hero h1 { color: #333333; }
+/* Sin el símbolo ¶ junto al título del banner */
+.md-typeset .fp-hero h1 .headerlink { display: none; }
+/* 2.º DAM: títulos e iconos de las fichas en gris oscuro, como su borde */
+.md-typeset .fp-curso-2 .grid.cards strong { color: #333333; }
+.md-typeset .fp-curso-2 .grid.cards .twemoji, .md-typeset .fp-curso-2 .grid.cards .twemoji svg { color: #333333; fill: #333333; }
+
+/* Itinerario: explicación de cada flecha en cuatro fichas, con el mismo estilo que el resto */
+.fp-relaciones { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; margin: 1rem 0 2rem; }
+.fp-rel { border: 1px solid #6b6b6b; border-radius: .6rem; padding: .8rem .9rem; }
+.md-typeset .fp-rel strong { display: block; font-size: .78rem; margin-bottom: .35rem; }
+.md-typeset .fp-m1 { color: #c22622; }
+.md-typeset .fp-m2 { color: #333333; }
+.md-typeset .fp-flecha { color: #9e9e9e; font-weight: 400; }
+.md-typeset .fp-rel p { margin: 0; font-size: .72rem; line-height: 1.5; }
+@media screen and (max-width: 59.9375em) { .fp-relaciones { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media screen and (max-width: 29.9375em) { .fp-relaciones { grid-template-columns: 1fr; } }
+
+/* Más ancho útil: el contenido aprovecha pantallas grandes (el índice de cada página va integrado en el menú lateral) */
+.md-grid { max-width: 90rem; }
+.md-typeset table:not([class]) { display: table; width: 100%; }
+
+/* Segunda barra: módulos del curso abierto, en gris oscuro; el activo es un bloque de toda la altura en gris #555 y el hover un gris intermedio */
+.fp-subtabs { background: #333333; }
+.fp-subtabs__list { display: flex; flex-wrap: wrap; list-style: none; margin: 0 auto; padding: 0 .8rem; }
+.fp-subtabs__list a { display: block; color: #ffffff; font-size: .72rem; font-weight: 600; text-decoration: none; padding: .65rem 1rem; }
+.fp-subtabs__list a:hover { background: #444444; color: #ffffff; }
+.fp-subtabs__list a.fp-subtabs__activo { background: #555555; color: #ffffff; }
+@media screen and (max-width: 76.1875em) { .fp-subtabs { display: none; } }
+
+/* La cabecera es más alta cuando hay segunda barra: los saltos a apartados y el menú lateral fijo dejan ese margen */
+@media screen and (min-width: 76.25em) {
+  body.fp-con-subbarra .md-typeset :target,
+  body.fp-con-subbarra .md-typeset [id] { scroll-margin-top: 8rem; }
+  body.fp-con-subbarra .md-sidebar { top: 7.2rem; height: calc(100vh - 7.2rem); }
+}
+
+/* Índice de la página abierta en el menú lateral: se pliega al hacer clic en su flecha (mismo icono que las secciones) */
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary .fp-indice > a.md-nav__link--active { display: flex; justify-content: space-between; align-items: center; }
+  .md-nav--primary .fp-indice > a.md-nav__link--active .md-nav__icon { cursor: pointer; }
+  .md-nav--primary .fp-indice > a.md-nav__link--active .md-nav__icon:after { transform: rotate(90deg); }
+  .md-nav--primary .fp-indice.fp-indice-plegado > a.md-nav__link--active .md-nav__icon:after { transform: none; }
+  .md-nav--primary .fp-indice.fp-indice-plegado > nav.md-nav--secondary { display: none; }
+  /* En las pestañas de una sola página (Normativa, Acerca de…) el tema desactiva el clic en el nombre; se reactiva para poder plegar */
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active.fp-indice > .md-nav__link { pointer-events: auto; cursor: pointer; }
+}
+
+/* Índice de la página: los apartados ya leídos no se aclaran; solo se resalta en rojo el apartado actual */
+.md-nav__link--passed, .md-nav__link--passed code { color: var(--md-default-fg-color); }
