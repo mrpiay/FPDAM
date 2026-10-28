@@ -1,4 +1,4 @@
-# Programación didáctica de DAM
+# FPDAM · Programación didáctica abierta del CFGS DAM
 
 Programación didáctica **abierta** del ciclo formativo de grado superior **Desarrollo de Aplicaciones Multiplataforma (DAM)**: del currículo oficial a unidades, prácticas y rúbricas listas para el aula, con la justificación de cada decisión. Está basada en el RD 405/2023 y en el currículo de Galicia, y cada dato normativo cita su fuente.
 
