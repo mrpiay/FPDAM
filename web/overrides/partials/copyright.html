@@ -1,6 +1,9 @@
-{#- Pie de página, en una línea: fecha de la última actualización (gris claro del tema) · crédito del tema (gris normal) -#}
+{#- Pie de página, en una línea: etiquetas en el gris del pie y datos destacados: última actualización · licencia · crédito del tema -#}
 <div class="md-copyright">
-  <span class="md-copyright__highlight">Última actualización: {{ build_date_utc.strftime('%d/%m/%Y') }}</span>
+  Última actualización: <span class="md-copyright__highlight">{{ build_date_utc.strftime('%d/%m/%Y') }}</span>
+  <span class="fp-pie-separador" aria-hidden="true">·</span>
+  Licencia
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener license">CC BY-NC-SA 4.0</a>
   {% if not config.extra.generator == false %}
     <span class="fp-pie-separador" aria-hidden="true">·</span>
     Made with

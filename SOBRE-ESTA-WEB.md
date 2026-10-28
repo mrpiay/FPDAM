@@ -26,7 +26,7 @@ Una web de consulta para docentes: que se navegue por **curso → módulo → un
 - **Ancho:** dos columnas (menú y contenido) y un ancho máximo amplio, para que las tablas se lean bien.
 - **Paleta:** fondo claro, cabecera en rojo `#c22622` y textos en gris oscuro `#333333`. 1.º se asocia al rojo y 2.º al gris oscuro en toda la portada.
 - **Enlaces externos** (BOE, DOG, documentación oficial): se abren en una pestaña nueva.
-- **Pie de página:** fecha de la última actualización (la de la última vez que se generó la web) y crédito del tema.
+- **Pie de página:** fecha de la última actualización (la de la última vez que se generó la web), licencia y crédito del tema.
 - **Iconos** de Material Design, Octicons y Font Awesome, incluidos en el tema.
 
 Los estilos y el comportamiento propios están en la carpeta [`web/`](https://github.com/mrpiay/FPDAM/tree/main/web):
@@ -38,7 +38,7 @@ Los estilos y el comportamiento propios están en la carpeta [`web/`](https://gi
 | `modulos.js` | Segunda barra con los módulos del curso, menú lateral limitado al módulo abierto e índice plegable |
 | `external-links.js` | Abre los enlaces externos en una pestaña nueva |
 | `favicon.svg` | Icono de la pestaña del navegador |
-| `overrides/partials/copyright.html` | Pie de página: fecha de la última actualización y crédito del tema |
+| `overrides/partials/copyright.html` | Pie de página: fecha de la última actualización, licencia y crédito del tema |
 
 ## Cómo se genera
 
