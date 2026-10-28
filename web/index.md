@@ -11,7 +11,7 @@ hide:
 
 # Programación didáctica de DAM
 
-<p>Proyecto abierto y en desarrollo.<br>
+<p>Abierta y en desarrollo.<br>
 Programaciones, unidades didácticas, prácticas con rúbrica y proyectos reales.<br>
 Basado en el RD 405/2023 y en el currículo de Galicia, con cada fuente citada.</p>
 
