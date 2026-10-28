@@ -1,6 +1,8 @@
 # Programación didáctica de DAM
 
-Material docente completo para impartir cuatro módulos del ciclo formativo de grado superior **Desarrollo de Aplicaciones Multiplataforma (DAM)** con el currículo de Galicia: programaciones didácticas, unidades con prácticas y rúbricas, proyectos y la justificación de cada decisión. Está basado en el RD 405/2023 y cada dato normativo cita su fuente.
+Programación didáctica **abierta** del ciclo formativo de grado superior **Desarrollo de Aplicaciones Multiplataforma (DAM)**: del currículo oficial a unidades, prácticas y rúbricas listas para el aula, con la justificación de cada decisión. Está basada en el RD 405/2023 y en el currículo de Galicia, y cada dato normativo cita su fuente.
+
+De momento incluye **cuatro módulos**, dos de 1.º y dos de 2.º. El repositorio está pensado para ampliarse con más módulos del ciclo.
 
 **Consúltalo en la web:** [mrpiay.github.io/FPDAM](https://mrpiay.github.io/FPDAM/)
 
@@ -13,7 +15,7 @@ Material docente completo para impartir cuatro módulos del ciclo formativo de g
 
 ## Qué contiene
 
-| 4 módulos | 777 horas | 39 unidades didácticas | 236 criterios de evaluación | 33 decisiones justificadas |
+| 4 módulos (de momento) | 777 horas | 39 unidades didácticas | 236 criterios de evaluación | 33 decisiones justificadas |
 |:---:|:---:|:---:|:---:|:---:|
 | 1.º y 2.º DAM | Currículo de Galicia | Cada una con práctica y rúbrica | Todos trabajados y evaluados | Frente a alternativas, con fuentes |
 
@@ -36,7 +38,7 @@ Cada módulo tiene estas páginas:
 | **Decisiones** | Por qué cada tecnología o contenido, comparado con alternativas |
 | **Unidades** | Criterios que trabaja, contenidos, actividades, práctica evaluable y rúbrica |
 
-Los cuatro módulos forman un recorrido: Sistemas informáticos prepara el entorno de trabajo, Programación aporta la base de Java y orientación a objetos, y en 2.º esa base se aplica a aplicaciones de escritorio (Desarrollo de interfaces) y a aplicaciones móviles y videojuegos (PMDM).
+Los módulos incluidos forman un recorrido: Sistemas informáticos prepara el entorno de trabajo, Programación aporta la base de Java y orientación a objetos, y en 2.º esa base se aplica a aplicaciones de escritorio (Desarrollo de interfaces) y a aplicaciones móviles y videojuegos (PMDM).
 
 ## Cómo usarlo
 

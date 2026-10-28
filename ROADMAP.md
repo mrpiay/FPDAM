@@ -16,6 +16,10 @@
 - [ ] Repositorios de ejemplo con el código de los proyectos integradores.
 - [ ] Material propio pendiente: juego 2D de partida (PMDM, UD08), ejercicio Android con Java y Vistas (PMDM, UD01) y ejemplos de Godot (PMDM, UD09).
 
+## Próximas ampliaciones
+
+- [ ] Incorporar otros módulos del ciclo con la misma estructura (ficha, currículo, programación, decisiones y unidades).
+
 ## Adaptación a cada centro
 
 - [ ] Calendario escolar, duración de las sesiones y distribución horaria semanal.

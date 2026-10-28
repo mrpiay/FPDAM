@@ -11,7 +11,7 @@ hide:
 
 # Programación didáctica de DAM
 
-<p>Cuatro módulos de 1.º y 2.º listos para impartir.<br>
+<p>Programación didáctica abierta, de momento con cuatro módulos de 1.º y 2.º.<br>
 Programaciones, unidades didácticas, prácticas con rúbrica y proyectos reales.<br>
 Basado en el RD 405/2023 y en el currículo de Galicia, con cada fuente citada.</p>
 
