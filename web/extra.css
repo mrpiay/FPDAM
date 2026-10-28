@@ -141,5 +141,5 @@
 /* Índice de la página: los apartados ya leídos no se aclaran; solo se resalta en rojo el apartado actual */
 .md-nav__link--passed, .md-nav__link--passed code { color: var(--md-default-fg-color); }
 
-/* Banner: la línea de fuentes, en un gris más claro que el resto del subtítulo */
-.fp-hero .fp-hero-nota { color: #8a8a8a; }
+/* Banner: la línea de fuentes, en cursiva como nota secundaria (mismo gris, para mantener el contraste accesible) */
+.fp-hero .fp-hero-nota { font-style: italic; }
