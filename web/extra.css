@@ -141,5 +141,9 @@
 /* Índice de la página: los apartados ya leídos no se aclaran; solo se resalta en rojo el apartado actual */
 .md-nav__link--passed, .md-nav__link--passed code { color: var(--md-default-fg-color); }
 
-/* Banner: la línea de fuentes, en cursiva como nota secundaria (mismo gris, para mantener el contraste accesible) */
-.fp-hero .fp-hero-nota { font-style: italic; }
+/* Banner: la línea de fuentes, como nota secundaria: gris claro, cursiva y algo separada */
+.fp-hero .fp-hero-nota { display: block; margin-top: .7rem; color: #8a8a8a; font-size: .95em; font-style: italic; }
+
+/* Pie: fecha y crédito en la misma línea, con separador */
+.md-copyright__highlight { display: inline; }
+.fp-pie-separador { margin: 0 .5em; opacity: .6; }
